@@ -1,5 +1,9 @@
 var is_initialize = false;
 
+$(function(){
+
+});
+
 $(document).on('pageinit', '#wtitle', function(e, data){
     console.log('fire on title page');
     initialize();
@@ -40,7 +44,7 @@ function initialize(){
     (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i
      .test(navigator.userAgent.toLowerCase()));
   if(is_mobile)
-    alert('Mobile');
+    ;//alert('Mobile');
   else
     console.log('Not mobile');
 
@@ -63,16 +67,3 @@ function initialize(){
 
   is_initialize = true;
 }
-
-/**
- * motion_handler - Callback function for DeviceMotionEvent.
- */
-function motion_handler(event){
-}
-
-/**
- * orientation_handler - Callback function for DeviceOrientationEvent.
- */
-function orientation_handler(event){
-}
-

@@ -1,0 +1,18 @@
+{
+  "COMMENT": "Resources List that use in this project.",
+  "FORMAT": [
+    "id  : Identifier of the resource",
+    "file: File name( includes a extentions).",
+    "dir : Directory path including the file( NEED a slash at the end of a directory name)."
+  ],
+  "FORMAT_EXAMPLE": [
+    {"id": "jpop", "file": "jpop.mp4", "dir": "sounds/"},
+    "The above mean that 'jpop' is the identifier of this file, and real path to the file is 'sounds/jpop.mp4'."
+  ],
+
+  "sounds": [
+  ],
+
+  "images": [
+  ]
+}
