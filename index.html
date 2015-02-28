@@ -15,30 +15,30 @@
         <script src="js/main.js"></script>
     </head>
     <body>
-      <div id="loading"></div>
+        <div id="loading"></div>
 
-      <!-- PAGE: Title -->
-      <div data-role="page" data-theme="a" id="wtitle">
-        <!-- <div data-role="header"></div> -->
-        <div role="main" class="ui-content">
-          <div class="contents">
-            <div class="m1"></div>
-            <div><img src="./img/title/title_01.png"></div>
-            <div class="m1"></div>
-            <div><img src="./img/title/title_02.png"></div>
-            <div class="m1"></div>
-            <!-- スタート -->
-            <div><a href="#wintro" id="start"><img src="./img/title/title_03.png"></div>
-              <div class="m2"></div>
-              <!-- 遊び方 -->
-              <div><a href="#rule" id="rule"><img src="./img/title/title_04.png"></div>
-                <div class="m1"></div>
-              </div>
+        <!-- PAGE: Title -->
+        <div data-role="page" data-theme="a" id="wtitle">
+            <!-- <div data-role="header"></div> -->
+            <div role="main" class="ui-content">
+                <div class="contents">
+                    <div class="m1"></div>
+                    <div><img src="./img/title/title_01.png"></div>
+                    <div class="m1"></div>
+                    <div><img src="./img/title/title_02.png"></div>
+                    <div class="m1"></div>
+                    <!-- スタート -->
+                    <div><a href="#wintro" id="start"><img src="./img/title/title_03.png"></div>
+                        <div class="m2"></div>
+                        <!-- 遊び方 -->
+                        <div><a href="#rule" id="rule"><img src="./img/title/title_04.png"></div>
+                            <div class="m1"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div data-role="footer"></div> -->
             </div>
-          </div>
-          <!-- <div data-role="footer"></div> -->
         </div>
-      </div>
 
         <!-- PAGE: Introduction -->
         <div data-role="page" data-theme="a" id="wintro">
@@ -58,74 +58,44 @@
 
         <!-- PAGE: Map -->
         <div data-role="page" data-theme="a" id="wmap">
-          <div role="main" class="ui-content">
-            <div id="jpmap"></div>
-            <div class="ui-grid-b">
-              <div class="ui-block-a"></div>
-              <div class="ui-block-b">
+            <div role="main" class="ui-content">
+                <div id="jpmap"></div>
                 <a href="#wpig" data-role="button" data-icon="check">User Dancing</a>
-              </div>
-              <div class="ui-block-c"></div>
             </div>
-          </div>
         </div>
 
         <div data-role="page" data-theme="a" id="wpig">
-            <!-- <div data-role="header"></div> -->
             <div role="main" class="ui-content">
-                <div class="ui-grid-b">
-                    <div class="contents">
-                        <div class="m1"></div>
-                        <div class="image">
-                            <img src="./img/character/enemy1/1.svg" id="enemy">
-                        </div>
-                        <div class="m2"></div>
-                        <div class="fukidashi">
-                            <p class="name">名前</p>
-                            <p class="word">「ブタ総帥だよ！」</p>
-                            <img src="./img/270.svg" id="next">
-                        </div>
+                <div class="contents">
+                    <div class="m1"></div>
+                    <div class="image">
+                        <img src="./img/character/enemy1/1.svg" id="enemy">
                     </div>
-                    <div class="ui-block-a"></div>
-                    <div class="ui-block-b">
-                        <a href="#wuser" data-role="button" data-icon="check">Evaluation</a>
+                    <div class="m2"></div>
+                    <div class="fukidashi">
+                        <p class="name">名前</p>
+                        <p class="word">「ブタ総帥だよ！」</p>
+                        <img src="./img/270.svg" id="next">
                     </div>
-                    <div class="ui-block-c"></div>
                 </div>
+                <a href="#wuser" data-role="button" data-icon="check">Evaluation</a>
             </div>
-            <!-- <div data-role="footer"></div> -->
         </div>
 
 
         <!-- PAGE: UserDance -->
         <div data-role="page" data-theme="a" id="wuser">
-            <!-- <div data-role="header"></div> -->
             <div role="main" class="ui-content">
                 <p id="point_get">test</p>
-                <div class="ui-grid-b">
-                    <div class="ui-block-a"></div>
-                    <div class="ui-block-b">
-                        <a href="#weval" data-role="button" data-icon="check">Evaluation</a>
-                    </div>
-                    <div class="ui-block-c"></div>
-                </div>
+                <a href="#weval" data-role="button" data-icon="check">Evaluation</a>
             </div>
-            <!-- <div data-role="footer"></div> -->
         </div>
 
         <!-- PAGE: Evaluation -->
         <div data-role="page" data-theme="a" id="weval">
-            <!-- <div data-role="header"></div> -->
             <div role="main" class="ui-content">
-                <div class="ui-grid-b">
-                    <div class="ui-block-a"></div>
-                    <div class="ui-block-b">
-                        <a href="#wtitle" data-role="button" data-icon="back">Back to Title</a>
-                    </div>
-                    <div class="ui-block-c"></div>
-                </div>
+                <a href="#wtitle" data-role="button" data-icon="back">Back to Title</a>
             </div>
-            <!-- <div data-role="footer"></div> -->
         </div>
     </body>
 </html>
