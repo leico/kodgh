@@ -2,12 +2,12 @@
 /*@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);*/
 @font-face {
   font-family: 'fontopo';
-  src: url('./css/font/FontopoNIHONGO.eot?#iefix') format('embedded-opentype'),
-       url('./css/font/FontopoNIHONGO.otf')  format('opentype'),
+  src: url('./css/font/FontopoNIHONGO.otf')  format('opentype'),
+       url('./css/font/FontopoNIHONGO.eot?#iefix') format('embedded-opentype'),
        url('./css/font/FontopoNIHONGO.woff') format('woff');
 }
 
-
+　
 *{
   margin  : 0;
   padding : 0;
@@ -20,7 +20,11 @@
   font-family : "fontopo";
 }
 
-.contents{
+#loading{
+  display: none;
+}
+
+.contents{　
   text-align: center;
   margin-right: auto;
   margin-left: auto;
@@ -71,6 +75,7 @@ img{
 }
 
 .fukidashi{
+  min-height: 100px;
   height: 30%;
   background-color: orange;
   border-radius: 10px;
@@ -87,6 +92,24 @@ img{
 .word{
 
   padding: 5px 10px 10px 10px;
+  font-size: 0.8em;
+}
+
+.character{
+  width: 80px;
+  top:-30px;
+  display: relative;
+  float: left;
+}
+
+.place{
+  margin-left: 40px;
+  margin-bottom: 10px;
+}
+
+.info{
+/*  クリックした地域の情報・難易度とか　*/
+  margin-left: 40px;
   font-size: 0.8em;
 }
 

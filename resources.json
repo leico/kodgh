@@ -11,7 +11,7 @@
   ],
 
   "sounds": [
-    {"id": "donpa"  , "file": "donpa24.mp3", "dir": "sounds/"},
+    {"id": "donpa"  , "file": "donpa.mp3"  , "dir": "sounds/"},
     {"id": "pyu"    , "file": "pyu.mp3"    , "dir": "sounds/"},
     {"id": "hoi"    , "file": "hoi.mp3"    , "dir": "sounds/"},
     {"id": "intro"  , "file": "intro16.mp3", "dir": "sounds/"},

@@ -9,137 +9,115 @@
         <link rel="stylesheet" href="css/style.css" />
         <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-        <script src="js/main.js"></script>
         <script type="text/javascript" src="http://lodcu.cs.chubu.ac.jp/SparqlEPCU/RDFmgr/rdfmgr-2.0.0.js"></script>
-        <script src="js/map.js"></script>
+
+        <script src="js/jquery.japan-map.min.js"></script>
+        <script src="js/audio.js"></script>
+        <script src="js/main.js"></script>
     </head>
     <body>
-      <div id="loading"></div>
+        <div id="loading"></div>
 
-      <!-- PAGE: Title -->
-      <div data-role="page" data-theme="a" id="wtitle">
-        <!-- <div data-role="header"></div> -->
-        <div role="main" class="ui-content">
-          <div class="contents">
-            <div class="m1"></div>
-            <div><img src="./img/title/title_01.png"></div>
-            <div class="m1"></div>
-            <div><img src="./img/title/title_02.png"></div>
-            <div class="m1"></div>
-            <!-- スタート -->
-            <div><a href="#wintro" id="start"><img src="./img/title/title_03.png"></div>
-              <div class="m2"></div>
-              <!-- 遊び方 -->
-              <div><a href="#rule" id="rule"><img src="./img/title/title_04.png"></div>
-                <div class="m1"></div>
-              </div>
+        <!-- PAGE: Title -->
+        <div data-role="page" data-theme="a" id="wtitle">
+            <!-- <div data-role="header"></div> -->
+            <div role="main" class="ui-content">
+                <div class="contents">
+                    <div class="m1"></div>
+                    <div><img src="./img/title/title_01.png"></div>
+                    <div class="m1"></div>
+                    <div><img src="./img/title/title_02.png"></div>
+                    <div class="m1"></div>
+                    <!-- スタート -->
+                    <div><a href="#wintro" id="start"><img src="./img/title/title_03.png"></a></div>
+                        <div class="m2"></div>
+                        <!-- 遊び方 -->
+                        <div><a href="#wrule" id="rule"><img src="./img/title/title_04.png"></a></div>
+                            <div class="m1"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div data-role="footer"></div> -->
             </div>
-          </div>
-          <!-- <div data-role="footer"></div> -->
         </div>
-      </div>
 
         <!-- PAGE: Introduction -->
         <div data-role="page" data-theme="a" id="wintro">
             <div data-role="header" data-add-back-btn="true">
                 <a href="#wtitle" data-role="button" data-icon="back" data-iconpos="notext" class="ui-btn-left"></a>
+                <h2></h2>
             </div>
             <div role="main" class="ui-contents">
-                <div class="ui-grid-b">
-                    <div class="ui-block-a"></div>
-                    <div class="ui-block-b">
-                        <a href="#wmap" data-role="button" data-icon="check">Pig Dancing</a>
-                    </div>
-                    <div class="ui-block-c"></div>
-                </div> 
+              <a href="#wmap" data-role="button" data-icon="check">Pig Dancing</a>
+            </div>
+        </div>
+
+        <!-- PAGE: Rule -->
+        <div data-role="page" data-theme="a" id="wrule">
+            <div data-role="header" data-add-back-btn="true">
+                <a href="#wtitle" data-role="button" data-icon="back" data-iconpos="notext" class="ui-btn-left"></a>
+                <h2>あそびかた</h2>
+            </div>
+            <div role="main" class="ui-content">
             </div>
         </div>
 
         <!-- PAGE: Map -->
         <div data-role="page" data-theme="a" id="wmap">
-            <!-- <div data-role="header"></div> -->
             <div role="main" class="ui-content">
+                <div id="jpmap"></div>
                 <div class="contents">
-                    <ul id="imagemap">
-                        <li id="hokkaido"><a onclick="SparqlSend('北海道')"><span>北海道</span></a></li>
-                        <li id="touhoku"><a onclick="SparqlSend('東北')"><span>東北</span></a></li>
-                        <li id="hokuriku"><a onclick="SparqlSend('北陸')"><span>北陸</span></a></li>
-                        <li id="kanto"><a onclick="SparqlSend('関東')"><span>関東</span></a></li>
-                        <li id="tokai"><a onclick="SparqlSend('東海')"><span>東海</span></a></li>
-                        <li id="kansai"><a onclick="SparqlSend('関西')"><span>関西</span></a></li>
-                        <li id="chugoku"><a onclick="SparqlSend('中国')"><span>中国</span></a></li>
-                        <li id="shikoku"><a onclick="SparqlSend('四国')"><span>四国</span></a></li>
-                        <li id="kyushu"><a onclick="SparqlSend('九州')"><span>九州</span></a></li>
-                        <li id="okinawa"><a onclick="SparqlSend('沖縄')"><span>沖縄</span></a></li>
-                    </ul>
+                    <a href="#wpig">
+                    <img src="./img/button/enter.png" id="enter"></a>
                 </div>
-                <div class="ui-grid-b">
-                    <div class="ui-block-a"></div>
-                    <div class="ui-block-b">
-                        <a href="#wpig" data-role="button" data-icon="check">User Dancing</a>
-                    </div>
-                    <div class="ui-block-c"></div>
+                <div class="m2"></div>
+                <div class="fukidashi">
+                    <div class="character"><img src="img/character/boo/b0-01.svg"></div>
+                    <div class="place">オーサカ</div>
+                    <div class="info">難易度：☆☆☆</div>
                 </div>
             </div>
-            <!-- <div data-role="footer"></div> -->
         </div>
 
         <div data-role="page" data-theme="a" id="wpig">
-            <!-- <div data-role="header"></div> -->
             <div role="main" class="ui-content">
-                <div class="ui-grid-b">
-                    <div class="contents">
-                        <div class="m1"></div>
-                        <div class="image">
-                            <img src="./img/character/enemy1/1.svg" id="enemy">
-                        </div>
-                        <div class="m2"></div>
-                        <div class="fukidashi">
-                            <p class="name">名前</p>
-                            <p class="word">「ブタ総帥だよ！」</p>
-                            <img src="./img/270.svg" id="next">
-                        </div>
+                <div class="contents">
+                    <div class="m1"></div>
+                    <div class="image">
+                        <img src="./img/character/enemy1/b1-01.svg" id="enemy">
                     </div>
-                    <div class="ui-block-a"></div>
-                    <div class="ui-block-b">
-                        <a href="#wuser" data-role="button" data-icon="check">Evaluation</a>
+                    <div class="m2"></div>
+                    <div class="fukidashi">
+                        <p class="name">名前</p>
+                        <p class="word">「ブタ総帥だよ！」</p>
+                        <img src="./img/270.svg" id="next">
                     </div>
-                    <div class="ui-block-c"></div>
                 </div>
+                <a href="#wuser" data-role="button" data-icon="check">Evaluation</a>
             </div>
-            <!-- <div data-role="footer"></div> -->
         </div>
 
 
         <!-- PAGE: UserDance -->
         <div data-role="page" data-theme="a" id="wuser">
-            <!-- <div data-role="header"></div> -->
             <div role="main" class="ui-content">
                 <p id="point_get">test</p>
-                <div class="ui-grid-b">
-                    <div class="ui-block-a"></div>
-                    <div class="ui-block-b">
-                        <a href="#weval" data-role="button" data-icon="check">Evaluation</a>
-                    </div>
-                    <div class="ui-block-c"></div>
-                </div>
+                <a href="#weval" data-role="button" data-icon="check">Evaluation</a>
             </div>
-            <!-- <div data-role="footer"></div> -->
         </div>
 
         <!-- PAGE: Evaluation -->
         <div data-role="page" data-theme="a" id="weval">
-            <!-- <div data-role="header"></div> -->
             <div role="main" class="ui-content">
-                <div class="ui-grid-b">
-                    <div class="ui-block-a"></div>
-                    <div class="ui-block-b">
-                        <a href="#wtitle" data-role="button" data-icon="back">Back to Title</a>
-                    </div>
-                    <div class="ui-block-c"></div>
+                <div class="contents">
+                    <img src="./img/character/enemy1/b1-03.svg" id="enemy">
+                    <div class="m1"></div>
+                    <a href="#wmap"><img src="./img/button/retry.png" id="retry"></a>
+                    <div class="m2">
+                    <a href="#wtitle"><img src="./img/button/back.png" id="back"></a>
                 </div>
             </div>
-            <!-- <div data-role="footer"></div> -->
         </div>
     </body>
 </html>
+　
