@@ -93,3 +93,14 @@ img{
   float: right;
   bottom: 20px;
 }
+
+.loading {
+    overflow:   hidden;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .7 ) url('../img/buta/now_2.gif') 50% 10% no-repeat;
+}

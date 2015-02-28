@@ -1,7 +1,7 @@
 var is_initialize = false;
 
 $(function(){
-
+  //$("#loading").addClass('loading');
 });
 
 $(document).on('pageinit', '#wtitle', function(e, data){
