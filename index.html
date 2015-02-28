@@ -21,8 +21,9 @@
             <div role="main" class="ui-content">
                 <div class="ui-grid-b">
                     <div class="ui-block-a"></div>
-                    <div class="ui-block-b">
-<!--                         <a href="#wintro" data-role="button" data-icon="check">Introduction</a> -->
+                    <div class="ui-block-b"></div>
+                    <div class="ui-block-c"></div>
+                    <div class="contents">
                         <div class="m1"></div>
                         <div><img src="./img/title/title_01.png"></div>
                         <div class="m1"></div>
@@ -34,8 +35,7 @@
                         <!-- 遊び方 -->
                         <div><a href="#rule" id="rule"><img src="./img/title/title_04.png"></div>
                         <div class="m1"></div>
-                    </div>
-                    <div class="ui-block-c"></div>
+                    </div>                    
                 </div>
             </div>
             <!-- <div data-role="footer"></div> -->
@@ -61,18 +61,20 @@
         <div data-role="page" data-theme="a" id="wmap">
             <!-- <div data-role="header"></div> -->
             <div role="main" class="ui-content">
-                <ul id="imagemap">
-            <li id="hokkaido"><a onclick="SparqlSend('北海道')"><span>北海道</span></a></li>
-            <li id="touhoku"><a onclick="SparqlSend('東北')"><span>東北</span></a></li>
-            <li id="hokuriku"><a onclick="SparqlSend('北陸')"><span>北陸</span></a></li>
-            <li id="kanto"><a onclick="SparqlSend('関東')"><span>関東</span></a></li>
-            <li id="tokai"><a onclick="SparqlSend('東海')"><span>東海</span></a></li>
-            <li id="kansai"><a onclick="SparqlSend('関西')"><span>関西</span></a></li>
-            <li id="chugoku"><a onclick="SparqlSend('中国')"><span>中国</span></a></li>
-            <li id="shikoku"><a onclick="SparqlSend('四国')"><span>四国</span></a></li>
-            <li id="kyushu"><a onclick="SparqlSend('九州')"><span>九州</span></a></li>
-            <li id="okinawa"><a onclick="SparqlSend('沖縄')"><span>沖縄</span></a></li>
-        </ul>
+                <div class="contents">
+                    <ul id="imagemap">
+                        <li id="hokkaido"><a onclick="SparqlSend('北海道')"><span>北海道</span></a></li>
+                        <li id="touhoku"><a onclick="SparqlSend('東北')"><span>東北</span></a></li>
+                        <li id="hokuriku"><a onclick="SparqlSend('北陸')"><span>北陸</span></a></li>
+                        <li id="kanto"><a onclick="SparqlSend('関東')"><span>関東</span></a></li>
+                        <li id="tokai"><a onclick="SparqlSend('東海')"><span>東海</span></a></li>
+                        <li id="kansai"><a onclick="SparqlSend('関西')"><span>関西</span></a></li>
+                        <li id="chugoku"><a onclick="SparqlSend('中国')"><span>中国</span></a></li>
+                        <li id="shikoku"><a onclick="SparqlSend('四国')"><span>四国</span></a></li>
+                        <li id="kyushu"><a onclick="SparqlSend('九州')"><span>九州</span></a></li>
+                        <li id="okinawa"><a onclick="SparqlSend('沖縄')"><span>沖縄</span></a></li>
+                    </ul>
+                </div>
                 <div class="ui-grid-b">
                     <div class="ui-block-a"></div>
                     <div class="ui-block-b">
@@ -88,16 +90,16 @@
             <!-- <div data-role="header"></div> -->
             <div role="main" class="ui-content">
                 <div class="ui-grid-b">
+                    <div class="contents">
+                        <img src="./img/character/enemy1/1.svg" class="enemy">
+                        <div class="fukidashi">ふきだし
+                            <p class="word">テキストテキスト</p>
+                        </div>
+                    </div>
                     <div class="ui-block-a"></div>
                     <div class="ui-block-b">
                         <a href="#wuser" data-role="button" data-icon="check">Evaluation</a>
-
-                        <img src="./img/character/enemy1/1.svg" class="enemy">
-                        <div class="fukidashi">ふきだし
-                            <p>テキストテキスト</p>
-                            <p>ああああああああ</p>
-                        </div>
-                     </div>
+                    </div>
                     <div class="ui-block-c"></div>
                 </div>
             </div>

@@ -15,8 +15,16 @@
   padding : 0;
 }
 
-#wtitle .ui-block-b{
-    background: url(../img/title/bg.jpg) no-repeat; 
+.contents{
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 30px;
+}
+
+
+#wtitle {
+    background: url(../img/title/bg.jpg) no-repeat no-repeat center center fixed; 
 }
 
 body{
@@ -42,13 +50,15 @@ img{
 }
 
 .fukidashi{
-  margin: 30px;
   height: 100px;
-  width: 100%;
   background-color: orange;
   border-radius: 10px;
   box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
+  text-align: left;
+}
 
+.word{
+  padding: 20px;
 }
 
 
