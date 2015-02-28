@@ -32,6 +32,7 @@ body{
 /*  font-family: 'Noto Sans Japanese', serif;*/
   font-family: 'fontopo';
   font-size: 16px;
+  text-align: center;
 }
 
 .m1{
@@ -43,14 +44,19 @@ body{
 }
 
 img{
-  width: auto;
+  width: 100%;
   position: relative;
   margin: 0 auto;
   text-align: center;
 }
 
+.image{
+  width: 90%;
+  height: 70%;
+}
+
 .fukidashi{
-  height: 100px;
+  height: 30%;
   background-color: orange;
   border-radius: 10px;
   box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
@@ -61,7 +67,6 @@ img{
   padding: 20px;
 }
 
-
-img.enemy{
-  width: 300px;
+.enemy{
+  width: 90%;
 }
