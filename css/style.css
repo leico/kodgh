@@ -80,3 +80,11 @@ img{
   padding: 5px 10px 10px 10px;
   font-size: 0.8em;
 }
+
+#next{
+  width: 20px;
+  height: 20px;
+  position: relative;
+  float: right;
+  bottom: 20px;
+}
