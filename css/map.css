@@ -4,7 +4,7 @@
 #imagemap {
 	margin: 0px auto;
 	padding: 0px;
-	background: transparent url(img/jp.png) top left no-repeat;
+	background: transparent url(../img/jp.png) top left no-repeat;
 	width: 600px;
 	height: 400px;
 	position: relative;
@@ -33,7 +33,7 @@
 	height: 131px;
 }
 #hokkaido a:hover {
-	background: url(img/jp.png) -333px -400px no-repeat;
+	background: url(../img/jp.png) -333px -400px no-repeat;
 }
 
 /* 東北 */
@@ -46,7 +46,7 @@
 	height: 145px;
 }
 #touhoku a:hover {
-	background: transparent url(img/jp.png) -253px -928px no-repeat;
+	background: transparent url(../img/jp.png) -253px -928px no-repeat;
 }
 
 /* 北陸・甲信越 */
@@ -59,7 +59,7 @@
 	height: 95px;
 }
 #hokuriku a:hover {
-	background: transparent url(img/jp.png) -202px -1408px no-repeat;
+	background: transparent url(../img/jp.png) -202px -1408px no-repeat;
 }
 
 /* 関東 */
@@ -72,7 +72,7 @@
 	height: 148px;
 }
 #kanto a:hover {
-	background: transparent url(img/jp.png) -280px -1852px no-repeat;
+	background: transparent url(../img/jp.png) -280px -1852px no-repeat;
 }
 
 /* 東海 */
@@ -85,7 +85,7 @@
 	height: 100px;
 }
 #tokai a:hover {
-	background: transparent url(img/jp.png) -202px -2260px no-repeat;
+	background: transparent url(../img/jp.png) -202px -2260px no-repeat;
 }
 
 /* 関西 */
@@ -98,7 +98,7 @@
 	height: 87px;
 }
 #kansai a:hover {
-	background: transparent url(img/jp.png) -171px -2661px no-repeat;
+	background: transparent url(../img/jp.png) -171px -2661px no-repeat;
 }
 
 /* 中国 */
@@ -111,7 +111,7 @@
 	height: 75px;
 }
 #chugoku a:hover {
-	background: transparent url(img/jp.png) -85px -3035px no-repeat;
+	background: transparent url(../img/jp.png) -85px -3035px no-repeat;
 }
 
 /* 四国 */
@@ -124,7 +124,7 @@
 	height: 50px;
 }
 #shikoku a:hover {
-	background: transparent url(img/jp.png) -107px -3500px no-repeat;
+	background: transparent url(../img/jp.png) -107px -3500px no-repeat;
 }
 
 /* 九州 */
@@ -137,7 +137,7 @@
 	height: 135px;
 }
 #kyushu a:hover {
-	background: transparent url(img/jp.png) -24px -3865px no-repeat;
+	background: transparent url(../img/jp.png) -24px -3865px no-repeat;
 }
 
 /* 沖縄 */
@@ -150,7 +150,7 @@
 	height: 155px;
 }
 #okinawa a:hover {
-	background: transparent url(img/jp.png) 0px -4000px no-repeat;
+	background: transparent url(../img/jp.png) 0px -4000px no-repeat;
 }
 
 /* ●日本地図下の地域リスト */
