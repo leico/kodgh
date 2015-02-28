@@ -1,14 +1,15 @@
-function SparqlSend(hoge){
-	// var prefecture = '"秋田県"';
+var difficulty;
 
-	var test = "'"+hoge+"'";
+function SparqlSend(area){
+
+	var area2 = "'"+area+"'";
 
 	var rdfmgr = new RDFmgr("prefecturePigPopulation");
-	var prefecture = "select ?num where {?s lodcu:都道府県 "+test+" ;lodcu:豚頭数 ?num.} LIMIT 100";
+	var prefecture = "select ?num where {?s lodcu:都道府県 "+area2+" ;lodcu:豚頭数 ?num.} LIMIT 100";
 
 	console.log(prefecture);
 
-	console.log(hoge);
+	console.log(area2);
 
 	rdfmgr.executeQuery({
 		sparql: prefecture,
@@ -16,7 +17,6 @@ function SparqlSend(hoge){
 		error: getErrorMsg
 	});
 }
-
 
 function maketable(re){
 	var str = new String();
@@ -26,7 +26,16 @@ function maketable(re){
 		}
 	}
 	console.log(str);
+	if(str < 250){
+		difficulty = 1;
+	}else if(str >= 250 && str <=500){
+		difficulty = 2;
+	}else if(str >= 500 && str <=750){
+		difficulty = 3;
+	}
+	console.log(difficulty);
 }
+
 function getErrorMsg(eType,eMsg,eMsg2){
 	alert(eMsg+"\n\n"+eMsg2);
 }
