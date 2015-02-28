@@ -1,0 +1,176 @@
+@charset "utf-8";
+
+/* 共通部分 */
+#imagemap {
+	margin: 0px auto;
+	padding: 0px;
+	background: transparent url(img/jp.png) top left no-repeat;
+	width: 600px;
+	height: 400px;
+	position: relative;
+}
+#imagemap li {
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	list-style: none;
+	font-size: 14px;
+}
+#imagemap a {
+	position: absolute;
+}
+#imagemap a span {
+	display: none;
+}
+
+/* 北海道 */
+#hokkaido {
+	top: 0px;
+	left: 333px;
+}
+#hokkaido a {
+	width: 300px;
+	height: 131px;
+}
+#hokkaido a:hover {
+	background: url(img/jp.png) -333px -400px no-repeat;
+}
+
+/* 東北 */
+#touhoku {
+	top: 128px;
+	left: 253px;
+}
+#touhoku a {
+	width: 180px;
+	height: 145px;
+}
+#touhoku a:hover {
+	background: transparent url(img/jp.png) -253px -928px no-repeat;
+}
+
+/* 北陸・甲信越 */
+#hokuriku {
+	top: 208px;
+	left: 202px;
+}
+#hokuriku a {
+	width: 128px;
+	height: 95px;
+}
+#hokuriku a:hover {
+	background: transparent url(img/jp.png) -202px -1408px no-repeat;
+}
+
+/* 関東 */
+#kanto {
+	top: 252px;
+	left: 280px;
+}
+#kanto a {
+	width: 68px;
+	height: 148px;
+}
+#kanto a:hover {
+	background: transparent url(img/jp.png) -280px -1852px no-repeat;
+}
+
+/* 東海 */
+#tokai {
+	top: 260px;
+	left: 202px;
+}
+#tokai a {
+	width: 88px;
+	height: 100px;
+}
+#tokai a:hover {
+	background: transparent url(img/jp.png) -202px -2260px no-repeat;
+}
+
+/* 関西 */
+#kansai {
+	top: 261px;
+	left: 171px;
+}
+#kansai a {
+	width: 62px;
+	height: 87px;
+}
+#kansai a:hover {
+	background: transparent url(img/jp.png) -171px -2661px no-repeat;
+}
+
+/* 中国 */
+#chugoku {
+	top: 235px;
+	left: 85px;
+}
+#chugoku a {
+	width: 100px;
+	height: 75px;
+}
+#chugoku a:hover {
+	background: transparent url(img/jp.png) -85px -3035px no-repeat;
+}
+
+/* 四国 */
+#shikoku {
+	top: 300px;
+	left: 107px;
+}
+#shikoku a {
+	width: 75px;
+	height: 50px;
+}
+#shikoku a:hover {
+	background: transparent url(img/jp.png) -107px -3500px no-repeat;
+}
+
+/* 九州 */
+#kyushu {
+	top: 265px;
+	left: 24px;
+}
+#kyushu a {
+	width: 88px;
+	height: 135px;
+}
+#kyushu a:hover {
+	background: transparent url(img/jp.png) -24px -3865px no-repeat;
+}
+
+/* 沖縄 */
+#okinawa {
+	top: 0px;
+	left: 0px;
+}
+#okinawa a {
+	width: 298px;
+	height: 155px;
+}
+#okinawa a:hover {
+	background: transparent url(img/jp.png) 0px -4000px no-repeat;
+}
+
+/* ●日本地図下の地域リスト */
+#area {
+	margin: 20px auto;
+	width: 600px;
+}
+#area li {
+	float:left;
+	text-indent:-5px;
+	font-size: 14px;
+	font-family: sans-serif;
+	padding: 0 30px 0 0;
+}
+#area li a {
+	text-decoration: none;
+	color: #2d67ee;
+}
+#area li a:hover {
+	text-decoration: underline;
+	color: #f1710f;
+}
+
