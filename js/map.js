@@ -26,11 +26,11 @@ function maketable(re){
 		}
 	}
 	console.log(str);
-	if(str < 250){
+	if(str < 1000){
 		difficulty = 1;
-	}else if(str >= 250 && str <=500){
+	}else if(str >= 1000 && str <=2000){
 		difficulty = 2;
-	}else if(str >= 500 && str <=750){
+	}else if(str >= 2000 && str <=3000){
 		difficulty = 3;
 	}
 	console.log(difficulty);
@@ -39,3 +39,7 @@ function maketable(re){
 function getErrorMsg(eType,eMsg,eMsg2){
 	alert(eMsg+"\n\n"+eMsg2);
 }
+
+$(document).on('pageinit', '#wuser', function(e, data){
+	document.getElementById("point_get").innerHTML = difficulty;
+});
