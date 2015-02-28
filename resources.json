@@ -11,6 +11,12 @@
   ],
 
   "sounds": [
+    {"id": "donpa"  , "file": "donpa24.mp3", "dir": "sounds/"},
+    {"id": "pyu"    , "file": "pyu.mp3"    , "dir": "sounds/"},
+    {"id": "hoi"    , "file": "hoi.mp3"    , "dir": "sounds/"},
+    {"id": "intro"  , "file": "intro16.mp3", "dir": "sounds/"},
+    {"id": "rhythm1", "file": "rhy1.mp3"   , "dir": "sounds/"},
+    {"id": "shake"  , "file": "shake.m4a"  , "dir": "sounds/"}
   ],
 
   "images": [
