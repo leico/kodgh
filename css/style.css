@@ -5,14 +5,19 @@
   src: url('./css/font/FontopoNIHONGO.eot?#iefix') format('embedded-opentype'),
        url('./css/font/FontopoNIHONGO.otf')  format('opentype'),
        url('./css/font/FontopoNIHONGO.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
 }
 
 
 *{
   margin  : 0;
   padding : 0;
+
+  font-family : "fontopo";
+}
+
+/*local font translate for jQuery Mobile*/
+.ui-btn{
+  font-family : "fontopo";
 }
 
 .contents{
