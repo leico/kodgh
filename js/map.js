@@ -4,8 +4,8 @@ function SparqlSend(area){
 
 	var area2 = "'"+area+"'";
 
-	var rdfmgr = new RDFmgr("prefecturePigPopulation");
-	var prefecture = "select ?num where {?s lodcu:都道府県 "+area2+" ;lodcu:豚頭数 ?num.} LIMIT 100";
+	var rdfmgr = new RDFmgr("pigArea");
+	var prefecture = "select ?num where {?s lodcu:地方 "+area2+" ;lodcu:豚頭数 ?num.} LIMIT 100";
 
 	console.log(prefecture);
 
