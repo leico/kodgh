@@ -1,3 +1,4 @@
+var difficulty;
 
 function SparqlSend(area){
 
@@ -25,7 +26,16 @@ function maketable(re){
 		}
 	}
 	console.log(str);
+	if(str < 250){
+		difficulty = 1;
+	}else if(str >= 250 && str <=500){
+		difficulty = 2;
+	}else if(str >= 500 && str <=750){
+		difficulty = 3;
+	}
+	console.log(difficulty);
 }
+
 function getErrorMsg(eType,eMsg,eMsg2){
 	alert(eMsg+"\n\n"+eMsg2);
 }
