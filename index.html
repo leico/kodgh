@@ -9,9 +9,10 @@
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
         <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-        <script src="js/main.js"></script>
         <script type="text/javascript" src="http://lodcu.cs.chubu.ac.jp/SparqlEPCU/RDFmgr/rdfmgr-2.0.0.js"></script>
-        <script src="js/map.js"></script>
+
+        <script src="js/jquery.japan-map.min.js"></script>
+        <script src="js/main.js"></script>
     </head>
     <body>
       <div id="loading"></div>
@@ -57,31 +58,16 @@
 
         <!-- PAGE: Map -->
         <div data-role="page" data-theme="a" id="wmap">
-            <!-- <div data-role="header"></div> -->
-            <div role="main" class="ui-content">
-                <div class="contents">
-                    <ul id="imagemap">
-                        <li id="hokkaido"><a onclick="SparqlSend('北海道')"><span>北海道</span></a></li>
-                        <li id="touhoku"><a onclick="SparqlSend('東北')"><span>東北</span></a></li>
-                        <li id="hokuriku"><a onclick="SparqlSend('北陸')"><span>北陸</span></a></li>
-                        <li id="kanto"><a onclick="SparqlSend('関東')"><span>関東</span></a></li>
-                        <li id="tokai"><a onclick="SparqlSend('東海')"><span>東海</span></a></li>
-                        <li id="kansai"><a onclick="SparqlSend('関西')"><span>関西</span></a></li>
-                        <li id="chugoku"><a onclick="SparqlSend('中国')"><span>中国</span></a></li>
-                        <li id="shikoku"><a onclick="SparqlSend('四国')"><span>四国</span></a></li>
-                        <li id="kyushu"><a onclick="SparqlSend('九州')"><span>九州</span></a></li>
-                        <li id="okinawa"><a onclick="SparqlSend('沖縄')"><span>沖縄</span></a></li>
-                    </ul>
-                </div>
-                <div class="ui-grid-b">
-                    <div class="ui-block-a"></div>
-                    <div class="ui-block-b">
-                        <a href="#wpig" data-role="button" data-icon="check">User Dancing</a>
-                    </div>
-                    <div class="ui-block-c"></div>
-                </div>
+          <div role="main" class="ui-content">
+            <div id="jpmap"></div>
+            <div class="ui-grid-b">
+              <div class="ui-block-a"></div>
+              <div class="ui-block-b">
+                <a href="#wpig" data-role="button" data-icon="check">User Dancing</a>
+              </div>
+              <div class="ui-block-c"></div>
             </div>
-            <!-- <div data-role="footer"></div> -->
+          </div>
         </div>
 
         <div data-role="page" data-theme="a" id="wpig">
