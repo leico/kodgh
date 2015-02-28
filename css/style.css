@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/*@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);*/
+@font-face {
+  font-family: 'fontopo';
+  src: url('font/FontopoNIHONGO.eot?#iefix') format('embedded-opentype'),
+       url('font/FontopoNIHONGO.otf')  format('opentype'),
+       url('font/FontopoNIHONGO.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+*{
+  margin  : 0;
+  padding : 0;
+}
+
+.ui-block-b{
+    background: url(../img/title/bg.jpg) no-repeat; 
+}
+
+body{
+  background-color: #424242;
+/*  font-family: 'Noto Sans Japanese', serif;*/
+  font-family: 'fontopo';
+  font-size: 16px;
+}
+
+.m1{
+  margin-top: 60px;
+}
+
+.m2{
+  margin-top: 30px;
+}
+
+#wtitle img{
+  width: auto;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
