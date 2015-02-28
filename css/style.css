@@ -34,9 +34,24 @@ body{
   margin-top: 30px;
 }
 
-#wtitle img{
+img{
   width: auto;
   position: relative;
   margin: 0 auto;
   text-align: center;
+}
+
+.fukidashi{
+  margin: 30px;
+  height: 100px;
+  width: 100%;
+  background-color: orange;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
+
+}
+
+
+img.enemy{
+  width: 300px;
 }
